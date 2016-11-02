@@ -30,13 +30,27 @@ public class Magpie3
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (statement.length() == 0)
-		{
-			response = "Say something, please.";
-		}
-		else if (findKeyword(statement, "no") >= 0)
+		if (findKeyword(statement, "no") >= 0)
 		{
 			response = "Why so negative?";
+		}
+		else if(findKeyword(statement, "yes") >= 0)
+		{
+			response = "Mmmm that's nice ;)";
+		}
+		else if(findKeyword(statement, "maybe") >= 0)
+		{
+			response = "What's the hold up, why don't you just pick a side godammit?!?!?!";
+		}
+		else if(findKeyword(statement, "okay") >= 0 
+		{
+			response = "Haha, and then what? ;)";
+		}
+		else if(findKeyword(statement, "depression") >= 0) 
+			|| findKeyword(statement, "sad") >= 0
+			|| findKeyword(statement, "existential feeling of self doubt") >= 0);
+		{
+			response = "Well we are all going to die one day, when the bell tolls, it tolls for thee and thee alone.";
 		}
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
@@ -45,13 +59,21 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
+		else if(findKeyword(statement, "low self esteem") >= 0
+		{
+			response = "It's okay, you don't have low self esteem, you just probably just have low esteem for other people. If not, get help.";
+		}
+		else if(findKeyword(statement, "people" >= 0)
+		{
+			response = "Yeah, people suck. It seems like I'm on another planet when I talk to them.";
+		}
 		else
 		{
 			response = getRandomResponse();
 		}
 		return response;
 	}
-
+			
 	/**
 	 * Search for one word in phrase. The search is not case
 	 * sensitive. This method will check that the given goal
