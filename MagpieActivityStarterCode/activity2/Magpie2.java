@@ -35,12 +35,38 @@ public class Magpie2
 		{
 			response = "Why so negative?";
 		}
+		else if(statement.indexOf("yes") >= 0)
+		{
+			response = "Mmmm that's nice ;)";
+		}
+		else if(statement.indexOf("maybe") >= 0)
+		{
+			response = "What's the hold up, why don't you just pick a side godammit?!?!?!";
+		}
+		else if(statement.indexOf("okay") >= 0 
+		{
+			response = "Haha, and then what? ;)";
+		}
+		else if(statement.indexOf("depression") >= 0) 
+			|| statement.indexOf("sad") >= 0
+			|| system.indexOf("existential feeling of self doubt") >= 0);
+		{
+			response = "Well we are all going to die one day, when the bell tolls, it tolls for thee and thee alone.";
+		}
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+		}
+		else if(statement.indexOf("low self esteem") >= 0
+		{
+			response = "It's okay, you don't have low self esteem, you just probably just have low esteem for other people. If not, get help.";
+		}
+		else if(statement.indexOf("people" >= 0)
+		{
+			response = "Yeah, people suck. It seems like I'm on another planet when I talk to them.";
 		}
 		else
 		{
