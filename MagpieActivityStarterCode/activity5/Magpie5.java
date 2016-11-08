@@ -265,6 +265,10 @@ public class Magpie5
 			"Hmmm.",
 			"Do you really think so?",
 			"You don't say."
+			"Okay, I guess."
+			"I'd rather be sleeping."
+			"My biggest fear right now is that I'll wake up and this conversation won't be a dream."
+			"I'm too smart and sensitive to live in a world like ours."
+			"I'm overcome with emotion."
 	};
-	
 }
